@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a href="#" onclick="generateTable()">Generate Table</a>
+<div id="tableContainer"></div>
+<script>
+function generateTable() {
+  let table = "<table border='1'>";
+  for (let i = 1; i <= 3; i++) {
+    table += "<tr>";
+    for (let j = 1; j <= 3; j++) {
+      table += "<td>" + (i * j) + "</td>";
+    }
+    table += "</tr>";
+  }
+  table += "</table>";
+  document.getElementById("tableContainer").innerHTML = table;
+}
+</script>
+<p align="right">
+  Harsha vardhan Murthy<br>
+  BSC
+</p>
+</body>
+</html>
